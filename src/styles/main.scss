@@ -1,0 +1,28 @@
+@use 'hero';
+@use 'components/buttons';
+@use 'components/infos_bar';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robot, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
